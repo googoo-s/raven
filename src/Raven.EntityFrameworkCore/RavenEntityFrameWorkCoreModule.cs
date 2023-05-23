@@ -1,6 +1,14 @@
 ﻿using Volo.Abp.Modularity;
-namespace Raven.EntityFrameworkCore;
-public class RavenEntityFrameWorkCoreModule: AbpModule
-{
+using Raven.Domain;
+using Volo.Abp.EntityFrameworkCore.MySQL;
 
+namespace Raven.EntityFrameworkCore
+{
+    [DependsOn(
+        typeof(RavenDomainModule),
+        typeof(AbpEntityFrameworkCoreMySQLModule)
+    )]
+    public class RavenEntityFrameWorkCoreModule : AbpModule
+    {
+    }
 }

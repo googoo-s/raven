@@ -2,5 +2,4 @@
 namespace Raven.Domain;
 public class RavenDomainModule: AbpModule
 {
-
 }
