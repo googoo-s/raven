@@ -1,5 +1,6 @@
+using Volo.Abp.Modularity;
 namespace Raven.HttpApi.Client;
-public class RavenHttpApiHostModule
+public class RavenHttpApiHostModule: AbpModule
 {
 
 }
