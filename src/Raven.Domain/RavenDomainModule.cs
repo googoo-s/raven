@@ -1,5 +1,11 @@
-﻿using Volo.Abp.Modularity;
+﻿using Raven.Domain.Shared;
+
+using Volo.Abp.Modularity;
+
 namespace Raven.Domain;
-public class RavenDomainModule: AbpModule
+[DependsOn(
+    typeof(RavenDomainSharedModule)
+)]
+public class RavenDomainModule : AbpModule
 {
 }

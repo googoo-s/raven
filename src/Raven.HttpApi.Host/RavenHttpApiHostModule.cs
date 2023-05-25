@@ -1,5 +1,13 @@
+using Raven.Application;
+using Raven.EntityFrameworkCore;
 using Volo.Abp.Modularity;
 namespace Raven.HttpApi.Client;
-public class RavenHttpApiHostModule: AbpModule
+
+[DependsOn(
+    typeof(RavenApplicationModule),
+    typeof(RavenEntityFrameWorkCoreModule),
+    typeof(RavenHttpApiModule)
+)]
+public class RavenHttpApiHostModule : AbpModule
 {
 }

@@ -1,6 +1,13 @@
-﻿using Volo.Abp.Modularity;
+﻿using Raven.Application.Contracts;
+using Raven.Domain;
+using Volo.Abp.Modularity;
 
 namespace Raven.Application;
-public class RavenApplicationModule:AbpModule
+
+[DependsOn(
+    typeof(RavenDomainModule),
+    typeof(RavenApplicationContractsModule)
+)]
+public class RavenApplicationModule : AbpModule
 {
 }

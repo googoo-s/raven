@@ -8,5 +8,9 @@
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp" Version="7.2.2" />
+
+    <ProjectReference Include="..\Raven.Domain\Raven.Domain.csproj" />
+    <ProjectReference Include="..\Raven.Application.Contracts\Raven.Application.Contracts.csproj" />
+
   </ItemGroup>
 </Project>

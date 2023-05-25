@@ -13,5 +13,9 @@
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp" Version="7.2.2" />
+    <ProjectReference Include="..\Raven.Application\Raven.Application.csproj" />
+    <ProjectReference Include="..\Raven.EntityFrameworkCore\Raven.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Raven.HttpApi\Raven.HttpApi.csproj" />
+
   </ItemGroup>
 </Project>

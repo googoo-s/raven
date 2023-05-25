@@ -1,5 +1,9 @@
+using Raven.Application.Contracts;
 using Volo.Abp.Modularity;
 namespace Raven.HttpApi;
-public class RavenHttpApiModule: AbpModule
+[DependsOn(
+    typeof(RavenApplicationContractsModule)
+)]
+public class RavenHttpApiModule : AbpModule
 {
 }

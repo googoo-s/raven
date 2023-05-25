@@ -1,5 +1,14 @@
-﻿using Volo.Abp.Modularity;
+﻿using Raven.Application.Contracts;
+using Raven.Domain;
+using Raven.EntityFrameworkCore;
+using Volo.Abp.Modularity;
 namespace Raven.DbMigrator;
-public class RavenDbMigratorModule: AbpModule
+
+[DependsOn(
+    typeof(RavenDomainModule),
+    typeof(RavenApplicationContractsModule),
+        typeof(RavenEntityFrameWorkCoreModule)
+)]
+public class RavenDbMigratorModule : AbpModule
 {
 }
