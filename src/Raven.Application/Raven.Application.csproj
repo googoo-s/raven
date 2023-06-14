@@ -1,5 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="..\..\common.props" />
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -8,9 +9,10 @@
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp" Version="7.2.2" />
+  </ItemGroup>
 
+  <ItemGroup>
     <ProjectReference Include="..\Raven.Domain\Raven.Domain.csproj" />
     <ProjectReference Include="..\Raven.Application.Contracts\Raven.Application.Contracts.csproj" />
-
   </ItemGroup>
 </Project>
