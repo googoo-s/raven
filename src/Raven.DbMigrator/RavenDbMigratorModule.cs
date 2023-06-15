@@ -7,7 +7,7 @@ namespace Raven.DbMigrator;
 [DependsOn(
     typeof(RavenDomainModule),
     typeof(RavenApplicationContractsModule),
-        typeof(RavenEntityFrameWorkCoreModule)
+    typeof(RavenEntityFrameWorkCoreModule)
 )]
 public class RavenDbMigratorModule : AbpModule
 {
