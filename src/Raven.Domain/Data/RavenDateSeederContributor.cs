@@ -1,7 +1,7 @@
 using Volo.Abp.Data;
 using Volo.Abp.DependencyInjection;
 
-namespace Raven.Domain;
+namespace Raven.Domain.Data;
 
 public class RavenDataSeederContributor : IDataSeedContributor, ITransientDependency
 {
