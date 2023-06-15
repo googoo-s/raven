@@ -1,5 +1,6 @@
 ﻿using Raven.Application.Contracts;
 using Raven.Domain;
+
 using Volo.Abp.AutoMapper;
 using Volo.Abp.Modularity;
 
@@ -8,7 +9,7 @@ namespace Raven.Application;
 [DependsOn(
     typeof(RavenDomainModule),
     typeof(RavenApplicationContractsModule),
-        typeof(AbpAutoMapperModule)
+    typeof(AbpAutoMapperModule)
 )]
 public class RavenApplicationModule : AbpModule
 {

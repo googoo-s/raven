@@ -2,9 +2,9 @@ using AutoMapper;
 
 namespace Raven.Application;
 
-public class RavenApplicationAutoMapperProfile : Profile
+public class RavenDomainAutoMapperProfile : Profile
 {
-    public RavenApplicationAutoMapperProfile()
+    public RavenDomainAutoMapperProfile()
     {
         /* You can configure your AutoMapper mapping configuration here.
          * Alternatively, you can split your mapping configurations
