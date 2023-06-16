@@ -7,13 +7,15 @@ namespace Starter.HttpApi.Client;
 
 public static class Program
 {
-    public static async Task Main(string[] args) => await CreateHostBuilder(args).RunConsoleAsync();
+    public async static Task Main(string[] args)
+    {
+        await CreateHostBuilder(args).RunConsoleAsync();
+    }
 
-    public static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
+    public static IHostBuilder CreateHostBuilder(string[] args)
+    {
+        return Host.CreateDefaultBuilder(args)
             .AddAppSettingsSecretsJson()
-            .ConfigureServices((hostContext, services) =>
-            {
-                services.AddHostedService<ConsoleTestAppHostedService>();
-            });
+            .ConfigureServices((_, services) => services.AddHostedService<ConsoleTestAppHostedService>());
+    }
 }
