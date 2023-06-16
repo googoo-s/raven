@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Starter</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.ObjectExtending" Version="7.2.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Starter.Domain.Shared\Starter.Domain.Shared.csproj" />
+  </ItemGroup>
+</Project>
