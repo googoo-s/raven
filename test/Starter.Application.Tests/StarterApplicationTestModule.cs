@@ -1,5 +1,4 @@
-﻿using Starter.Application;
-
+﻿using Starter.Domain;
 using Volo.Abp.Modularity;
 
 namespace Starter.Application;
