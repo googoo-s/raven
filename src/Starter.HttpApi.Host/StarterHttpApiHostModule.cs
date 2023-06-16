@@ -1,13 +1,15 @@
 using Microsoft.OpenApi.Models;
+
 using Starter.EntityFrameworkCore;
 using Starter.HttpApi;
+
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Serilog;
 using Volo.Abp.Modularity;
 using Volo.Abp.Swashbuckle;
 
-namespace Starter;
+namespace Starter.HttpApi.Host;
 
 [DependsOn(
     typeof(StarterApplicationModule),

@@ -1,11 +1,13 @@
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
+
 using Volo.Abp.Data;
 using Volo.Abp.DependencyInjection;
 
-namespace Starter.Data;
+namespace Starter.Domain.Data;
 
 public class StarterDbMigrationService : ITransientDependency
 {

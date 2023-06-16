@@ -1,6 +1,8 @@
-﻿using Volo.Abp.Modularity;
-using Starter.Application.Contracts;
-namespace Starter;
+﻿using Starter.Application.Contracts;
+
+using Volo.Abp.Modularity;
+
+namespace Starter.HttpApi.Client;
 [DependsOn(
     typeof(StarterApplicationContractsModule)
 )]

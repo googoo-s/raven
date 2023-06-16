@@ -1,6 +1,6 @@
 using AutoMapper;
 
-namespace Starter;
+namespace Starter.Domain;
 
 public class StarterDomainAutoMapperProfile : Profile
 {

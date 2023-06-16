@@ -1,7 +1,6 @@
-using Starter.Data;
 using Volo.Abp.DependencyInjection;
 
-namespace Starter.Data;
+namespace Starter.Domain.Data;
 
 public class NullStarterDbSchemaMigrator : IStarterDbSchemaMigrator, ITransientDependency
 {

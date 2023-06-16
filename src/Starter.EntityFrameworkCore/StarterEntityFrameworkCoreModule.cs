@@ -1,9 +1,11 @@
-﻿using Volo.Abp.Modularity;
-using Volo.Abp.EntityFrameworkCore.MySQL;
-using Microsoft.Extensions.DependencyInjection;
-using Starter.EntityFrameworkCore.EntityFrameworkCore;
-using Volo.Abp.EntityFrameworkCore;
+﻿using Microsoft.Extensions.DependencyInjection;
 
+using Starter.Domain;
+using Starter.EntityFrameworkCore.EntityFrameworkCore;
+
+using Volo.Abp.EntityFrameworkCore;
+using Volo.Abp.EntityFrameworkCore.MySQL;
+using Volo.Abp.Modularity;
 
 namespace Starter.EntityFrameworkCore;
 

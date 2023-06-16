@@ -1,10 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Starter.Data;
-using Starter.EntityFrameworkCore.EntityFrameworkCore;
-using Volo.Abp.DependencyInjection;
 
-namespace Starter.EntityFrameworkCore;
+using Starter.Domain.Data;
+using Starter.EntityFrameworkCore.EntityFrameworkCore;
+
+using Volo.Abp.DependencyInjection;
 
 public class StarterDbSchemaMigrator : IStarterDbSchemaMigrator, ITransientDependency
 {

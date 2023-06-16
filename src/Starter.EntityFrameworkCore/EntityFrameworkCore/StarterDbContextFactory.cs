@@ -1,9 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
-using Starter.EntityFrameworkCore.EntityFrameworkCore;
 
-namespace Starter.EntityFrameworkCore;
+namespace Starter.EntityFrameworkCore.EntityFrameworkCore;
 
 public class StarterDbContextFactory : IDesignTimeDbContextFactory<StarterDbContext>
 {

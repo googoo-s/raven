@@ -1,4 +1,4 @@
-namespace Starter.Data;
+namespace Starter.Domain.Data;
 
 public interface IStarterDbSchemaMigrator
 {

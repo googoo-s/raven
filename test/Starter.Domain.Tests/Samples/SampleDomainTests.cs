@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
-using Shouldly;
+
 using Xunit;
 
-namespace Starter.Samples;
+namespace Starter.Domain.Samples;
 
 /* This is just an example test class.
  * Normally, you don't test code of the modules you are using

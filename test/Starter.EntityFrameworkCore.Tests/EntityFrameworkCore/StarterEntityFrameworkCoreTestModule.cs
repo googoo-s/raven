@@ -10,7 +10,7 @@ using Volo.Abp.Modularity;
 using Volo.Abp.Uow;
 using Starter.EntityFrameworkCore.EntityFrameworkCore;
 
-namespace Starter.EntityFrameworkCore;
+namespace Starter.EntityFrameworkCore.EntityFrameworkCore;
 
 [DependsOn(
     typeof(StarterEntityFrameworkCoreModule),

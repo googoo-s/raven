@@ -1,7 +1,7 @@
 using Serilog;
 using Serilog.Events;
 
-namespace Starter;
+namespace Starter.HttpApi.Host;
 
 public static class Program
 {

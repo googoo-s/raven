@@ -1,8 +1,9 @@
-using Volo.Abp.Modularity;
-using Volo.Abp.AutoMapper;
 using Starter.Application.Contracts;
 
-namespace Starter;
+using Volo.Abp.AutoMapper;
+using Volo.Abp.Modularity;
+
+namespace Starter.HttpApi;
 [DependsOn(
     typeof(StarterApplicationContractsModule),
     typeof(AbpAutoMapperModule)

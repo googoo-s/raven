@@ -6,7 +6,7 @@ using Volo.Abp.Http.Client;
 using Volo.Abp.Http.Client.IdentityModel;
 using Volo.Abp.Modularity;
 
-namespace Starter.HttpApi.Client.ConsoleTestApp;
+namespace Starter.HttpApi.Client;
 
 [DependsOn(
     typeof(AbpAutofacModule),

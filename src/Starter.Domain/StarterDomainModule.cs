@@ -3,7 +3,7 @@
 using Volo.Abp.AutoMapper;
 using Volo.Abp.Modularity;
 
-namespace Starter;
+namespace Starter.Domain;
 [DependsOn(
     typeof(StarterDomainSharedModule),
     typeof(AbpAutoMapperModule)

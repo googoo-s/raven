@@ -1,7 +1,10 @@
-﻿using Volo.Abp.AutoMapper;
+﻿using Starter.Application.Contracts;
+using Starter.Domain;
+
+using Volo.Abp.AutoMapper;
 using Volo.Abp.Modularity;
 
-namespace Starter;
+namespace Starter.Application;
 
 [DependsOn(
     typeof(StarterDomainModule),

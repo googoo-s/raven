@@ -1,8 +1,8 @@
-﻿using Volo.Abp.Modularity;
-using Starter.EntityFrameworkCore;
+﻿using Starter.EntityFrameworkCore.EntityFrameworkCore;
 
+using Volo.Abp.Modularity;
 
-namespace Starter;
+namespace Starter.Domain;
 
 [DependsOn(
     typeof(StarterEntityFrameworkCoreTestModule)

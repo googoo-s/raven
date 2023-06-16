@@ -1,10 +1,9 @@
 ﻿using System.Threading.Tasks;
 
 using Microsoft.EntityFrameworkCore;
-
 using Xunit;
 
-namespace Starter.EntityFrameworkCore.Samples;
+namespace Starter.EntityFrameworkCore.EntityFrameworkCore.Samples;
 
 /* This is just an example test class.
  * Normally, you don't test ABP framework code

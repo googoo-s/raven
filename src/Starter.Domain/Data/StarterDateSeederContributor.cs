@@ -1,7 +1,7 @@
 using Volo.Abp.Data;
 using Volo.Abp.DependencyInjection;
 
-namespace Starter.Data;
+namespace Starter.Domain.Data;
 
 public class StarterDataSeederContributor : IDataSeedContributor, ITransientDependency
 {

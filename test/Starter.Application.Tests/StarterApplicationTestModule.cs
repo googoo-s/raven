@@ -1,6 +1,8 @@
-﻿using Volo.Abp.Modularity;
+﻿using Starter.Application;
 
-namespace Starter;
+using Volo.Abp.Modularity;
+
+namespace Starter.Application;
 
 [DependsOn(
     typeof(StarterApplicationModule),

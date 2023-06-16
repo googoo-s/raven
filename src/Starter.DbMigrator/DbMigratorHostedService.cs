@@ -2,14 +2,15 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 using Castle.Core.Configuration;
-using
 
 using Serilog;
+
+using Starter.Domain.Data;
 
 using Volo.Abp;
 using Volo.Abp.Data;
 
-namespace Starter;
+namespace Starter.DbMigrator;
 
 public class DbMigratorHostedService : IHostedService
 {

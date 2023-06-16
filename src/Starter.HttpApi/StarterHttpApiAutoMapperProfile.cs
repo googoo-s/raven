@@ -1,6 +1,6 @@
 using AutoMapper;
 
-namespace Starter;
+namespace Starter.HttpApi;
 
 public class StarterHttpApiAutoMapperProfile : Profile
 {

@@ -1,4 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+
+using Starter.Domain;
+
 using Volo.Abp;
 using Volo.Abp.Autofac;
 using Volo.Abp.BackgroundJobs;

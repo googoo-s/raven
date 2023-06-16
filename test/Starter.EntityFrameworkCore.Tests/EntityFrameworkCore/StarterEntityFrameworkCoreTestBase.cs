@@ -1,6 +1,6 @@
 ﻿using Volo.Abp;
 
-namespace Starter.EntityFrameworkCore;
+namespace Starter.EntityFrameworkCore.EntityFrameworkCore;
 
 public abstract class StarterEntityFrameworkCoreTestBase : StarterTestBase<StarterEntityFrameworkCoreTestModule>
 {

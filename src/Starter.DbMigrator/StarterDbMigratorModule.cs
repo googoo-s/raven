@@ -1,11 +1,10 @@
-﻿
-using Starter.Application.Contracts;
+﻿using Starter.Application.Contracts;
 using Starter.Domain;
 using Starter.EntityFrameworkCore;
 
 using Volo.Abp.Modularity;
 
-namespace Starter;
+namespace Starter.DbMigrator;
 
 [DependsOn(
     typeof(StarterDomainModule),
