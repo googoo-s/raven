@@ -1,11 +1,10 @@
-using Raven.HttpApi.Host;
-
+using Raven;
 using Serilog;
 using Serilog.Events;
 
-namespace Acme.BookStore;
+namespace Raven;
 
-public class Program
+public static class Program
 {
     public async static Task<int> Main(string[] args)
     {
@@ -24,7 +23,7 @@ public class Program
 
         try
         {
-            Log.Information("Starting Acme.BookStore.HttpApi.Host.");
+            Log.Information("Starting Raven.HttpApi.Host.");
             var builder = WebApplication.CreateBuilder(args);
             builder.Host
                 .UseAutofac()

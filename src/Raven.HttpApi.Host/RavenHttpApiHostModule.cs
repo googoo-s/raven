@@ -2,18 +2,18 @@ using Microsoft.OpenApi.Models;
 
 using Raven.Application;
 using Raven.EntityFrameworkCore;
-
+using Raven.HttpApi;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Serilog;
 using Volo.Abp.Modularity;
 using Volo.Abp.Swashbuckle;
 
-namespace Raven.HttpApi.Host;
+namespace Raven;
 
 [DependsOn(
     typeof(RavenApplicationModule),
-    typeof(RavenEntityFrameWorkCoreModule),
+    typeof(RavenEntityFrameworkCoreModule),
     typeof(RavenHttpApiModule),
     typeof(AbpAspNetCoreSerilogModule),
     typeof(AbpSwashbuckleModule)

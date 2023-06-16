@@ -2,10 +2,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 using Raven.Domain.Data;
-
+using Raven.EntityFrameworkCore.EntityFrameworkCore;
 using Volo.Abp.DependencyInjection;
 
-namespace Raven.EntityFrameworkCore.EntityFrameworkCore;
+namespace Raven.EntityFrameworkCore;
 
 public class RavenDbSchemaMigrator : IRavenDbSchemaMigrator, ITransientDependency
 {
@@ -17,7 +17,7 @@ public class RavenDbSchemaMigrator : IRavenDbSchemaMigrator, ITransientDependenc
     }
     public async Task MigrateAsync()
     {
-        /* We intentionally resolving the BookStoreDbContext
+        /* We intentionally resolving the RavenDbContext
          * from IServiceProvider (instead of directly injecting it)
          * to properly get the connection string of the current tenant in the
          * current scope.

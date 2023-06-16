@@ -1,24 +1,24 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-
+using Raven.DbMigrator;
 using Serilog;
 using Serilog.Events;
 
-namespace Raven.DbMigrator;
+namespace Raven;
 
 public static class Program
 {
-    public static async Task Main(string[] args)
+    public async static Task Main(string[] args)
     {
         Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Information()
             .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
             .MinimumLevel.Override("Volo.Abp", LogEventLevel.Warning)
 #if DEBUG
-                .MinimumLevel.Override("Acme.BookStore", LogEventLevel.Debug)
+                .MinimumLevel.Override("Raven", LogEventLevel.Debug)
 #else
-                .MinimumLevel.Override("Acme.BookStore", LogEventLevel.Information)
+                .MinimumLevel.Override("Raven", LogEventLevel.Information)
 #endif
                 .Enrich.FromLogContext()
             .WriteTo.Async(c => c.File("Logs/logs.txt"))
