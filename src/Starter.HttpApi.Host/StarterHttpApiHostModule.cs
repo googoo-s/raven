@@ -5,6 +5,7 @@ using Starter.EntityFrameworkCore;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Serilog;
+using Volo.Abp.Autofac;
 using Volo.Abp.Modularity;
 using Volo.Abp.Swashbuckle;
 
@@ -15,7 +16,8 @@ namespace Starter.HttpApi.Host;
     typeof(StarterEntityFrameworkCoreModule),
     typeof(StarterHttpApiModule),
     typeof(AbpAspNetCoreSerilogModule),
-    typeof(AbpSwashbuckleModule)
+    typeof(AbpSwashbuckleModule),
+    typeof(AbpAutofacModule)
 )]
 public class StarterHttpApiHostModule : AbpModule
 {
